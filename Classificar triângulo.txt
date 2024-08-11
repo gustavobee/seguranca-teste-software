@@ -1,0 +1,115 @@
+Cenário: Triângulo equilátero 
+
+Se os lados do triângulo forem entre 1 e 200:
+	Dado que os lados do triângulo são 5, 5, 5
+	Quando eu classifico o triângulo
+	Então o resultado deve ser triângulo equilátero
+Senão:
+	Então o resultado deve ser fora do intervalo
+
+Cenário: Triângulo isósceles 
+
+Se os lados do triângulo forem entre 1 e 200:
+	Dado que os lados do triângulo são 5, 5, 4
+		Se cada lado for menor que a soma dos outros dois lados: 
+			Quando eu classifico o triângulo
+			Então o resultado deve ser triângulo isósceles
+		Senão: 
+			Quando eu classifico o triângulo
+			Então o resultado deve ser inválido
+Senão:
+	Então o resultado deve ser fora do intervalo
+
+Cenário: Triângulo escaleno 
+
+Se os lados do triângulo forem entre 1 e 200:
+	Dado que os lados do triângulo são 5, 6, 4
+		Se cada lado for menor que a soma dos outros dois lados: 
+			Quando eu classifico o triângulo
+			Então o resultado deve ser triângulo escaleno
+		Senão: 
+			Quando eu classifico o triângulo
+			Então o resultado deve ser inválido
+Senão:
+	Então o resultado deve ser fora do intervalo
+	
+--------------------------------------------------------------------
+Cenário: Triângulo equilátero válido
+
+Os lados do triângulo devem ser entre 1 e 200
+Para o triângulo ser válido, cada lado deve ser menor que a soma dos outros dois lados, ou
+seja, a soma de qualquer par de lados deve ser maior que o terceiro lado
+
+Dado que os lados do triângulo são 5, 5, 5
+Quando eu classifico o triângulo
+Então o resultado deve ser triângulo equilátero
+	
+Cenário: Triângulo equilátero inválido
+
+Os lados do triângulo devem ser entre 1 e 200
+Para o triângulo ser válido, cada lado deve ser menor que a soma dos outros dois lados, ou
+seja, a soma de qualquer par de lados deve ser maior que o terceiro lado
+
+Dado que os lados do triângulo são 245, 205, 211
+Quando eu classifico o triângulo
+Então o resultado deve ser Fora do intervalo
+
+Dado que os lados do triângulo são 21, 20, 21
+Quando eu classifico o triângulo
+Então o resultado deve ser triângulo isósceles
+
+
+
+Cenário: Triângulo isósceles válido
+
+Os lados do triângulo devem ser entre 1 e 200
+Para o triângulo ser válido, cada lado deve ser menor que a soma dos outros dois lados, ou
+seja, a soma de qualquer par de lados deve ser maior que o terceiro lado
+
+Dado que os lados do triângulo são 5, 5, 4
+Quando eu classifico o triângulo
+Então o resultado deve ser triângulo isósceles
+
+Cenário: Triângulo isósceles inválido
+
+Os lados do triângulo devem ser entre 1 e 200
+Para o triângulo ser válido, cada lado deve ser menor que a soma dos outros dois lados, ou
+seja, a soma de qualquer par de lados deve ser maior que o terceiro lado
+
+Dado que os lados do triângulo são -4, -4, 5
+Quando eu classifico o triângulo
+Então o resultado deve ser Fora do intervalo
+
+Dado que os lados do triângulo são 5, 5, 14
+Quando eu classifico o triângulo
+Então o resultado deve ser Inválido
+
+Dado que os lados do triângulo são 5, 6, 7
+Quando eu classifico o triângulo
+Então o resultado deve ser triângulo escaleno
+
+
+
+Cenário: Triângulo escaleno válido
+
+Os lados do triângulo devem ser entre 1 e 200
+Para o triângulo ser válido, cada lado deve ser menor que a soma dos outros dois lados, ou
+seja, a soma de qualquer par de lados deve ser maior que o terceiro lado
+
+Dado que os lados do triângulo são 5, 4, 6
+Quando eu classifico o triângulo
+Então o resultado deve ser triângulo escaleno
+
+Cenário: Triângulo escaleno inválido
+
+Os lados do triângulo devem ser entre 1 e 200
+Para o triângulo ser válido, cada lado deve ser menor que a soma dos outros dois lados, ou
+seja, a soma de qualquer par de lados deve ser maior que o terceiro lado
+
+Dado que os lados do triângulo são -4, 201, 5
+Quando eu classifico o triângulo
+Então o resultado deve ser Fora do intervalo
+
+Dado que os lados do triângulo são 5, 7, 14
+Quando eu classifico o triângulo
+Então o resultado deve ser Inválido
